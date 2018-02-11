@@ -141,7 +141,6 @@ let allProductNameSpace = (function() {
         category: this.categories[1]
       },
     ]
-
   }
   let model = new modelObj();
 
@@ -203,7 +202,7 @@ let allProductNameSpace = (function() {
       let productCard;
       let addToCartButton;
       this.viewPortElem.innerHTML = '';
-      for (product in allProducts) {
+      for (let product in allProducts) {
         productCard = document.createElement('figure');
         productCard.className = "card";
         addElement = '<div class="image"><img class="product-image" src="' + allProducts[product].image + '" alt="sq-sample4" /><a href="javascript:void(0)" class="addToCart">Add to Cart</a></div><figcaption><h2><a class="product-title" href="Product.html">' + allProducts[product].name + '</a></h2><p>' + allProducts[product].description + '</p><div class="price">' + allProducts[product].price + '</div></figcaption>'
@@ -236,7 +235,7 @@ let allProductNameSpace = (function() {
       let categoryElem;
       let checkMark;
       let allCheckMark;
-      allCategories = octopus.getAllCategories();
+      let allCategories = octopus.getAllCategories();
       allCategories.forEach(function(category) {
         categoryElem = document.createElement('li');
         addElement = '<label class="listContainer">' + category + '<input type="checkbox"><span class="checkmark"></span></label>';
