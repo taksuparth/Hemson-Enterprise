@@ -23,53 +23,12 @@
     </div>
   </div>
   <hr />
-  <div class="bodyWrap">
-    <div class="main">
-      <div class="folderTab clearFix">
-        <h3>Shopping Cart</h3>
-      </div>
-      <div class="botBorder clearFix">
-        <table class="cart">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Product</th>
-              <th class="text-right">Price</th>
-              <th>Quantity</th>
-              <th></th>
-              <th class="text-right">Total</th>
-            </tr>
-          </thead>
-          <tbody id="cart-body">
-          </tbody>
-        </table>
-        <div class="totals-value">
-          <table class="totaler">
-            <tbody>
-              <tr>
-                <td>Subtotal</td>
-                <td id="cart-subtotal"></td>
-              </tr>
-              <tr>
-                <td>Tax</td>
-                <td id="cart-tax"></td>
-              </tr>
-              <tr>
-                <td>Shipping</td>
-                <td id="cart-shipping">50.00 Rs</td>
-              </tr>
-              <tr>
-                <td>Estimated Total</td>
-                <td id="cart-grandtotal"></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="button add fright">Checkout</div>
-        </div>
-      </div>
-    </div>
+  <div class="bodyWrap" id="root">
   </div>
-  <script src="Script/cart_total.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.0.0-beta.3/babel.js"></script>
+  <script type="text/babel" src="Script/cart_total.jsx"></script>
 </body>
 
 </html>
